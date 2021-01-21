@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Login extends CI_Controller {
+class Login extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -30,39 +31,38 @@ class Login extends CI_Controller {
 	}
 	public function ceklogin()
 	{
-		$post = $this -> input -> post();
-		if (isset($post["username"]) && isset($post["pass"]))
-		{
+		$post = $this->input->post();
+		if (isset($post["username"]) && isset($post["pass"])) {
 			//cek user
-			$user = $this -> materi_security_model;
-			$data = $user -> getByUsernamePassword();
+			$user = $this->materi_security_model;
+			$data = $user->getByUsernamePassword();
 
-			if ($data != null)
-			{
+			if ($data != null) {
 				$username = $data->username;
 				$name = $data->nama;
 				$role = $data->role;
 				$password = $data->password;
 
 				//adding data to session
-				$newdata = array (
+				$newdata = array(
 					'user_username' => $username,
 					'user_name' => $name,
 					'user_role' => $role
 				);
-				$this -> session -> set_userdata($newdata);
+				$this->session->set_userdata($newdata);
 
-				if ($role == "Admin"){
+				if ($role == "Admin") {
 					redirect(site_url('dashboard'));
-				}
-				else if ($role == "Dosen"){
+				} else if ($role == "Dosen") {
 					echo "<script>alert('Hallo Dosen ?');</script>";
+				} else if ($role == "Mahasiswa") {
+					echo "<script>alert('Hallo Mahasiswa ?');</script>";
 				}
 			} else {
 				echo "<script>alert('User atau Password tidak terdaftar!');</script>";
-			} 
+			}
 		} else {
-				$this->load->view("login");
+			$this->load->view("login");
 		}
 	}
 }

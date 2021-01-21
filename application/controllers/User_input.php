@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class User_input extends CI_Controller {
+class User_input extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -37,7 +38,20 @@ class User_input extends CI_Controller {
 		if ($result > 0) $this->sukses();
 		else $this->gagal();
 	}
-
+	public function edit()
+	{
+		$user = $this->materi_security_model;
+		$result = $user->edit();
+		if ($result > 0) $this->sukses();
+		else $this->gagal();
+	}
+	public function hapus($input)
+	{
+		$user = $this->materi_security_model;
+		$result = $user->hapus($input);
+		if ($result > 0) $this->sukses();
+		else $this->gagal();
+	}
 	function sukses()
 	{
 		redirect(site_url('user_lihat'));

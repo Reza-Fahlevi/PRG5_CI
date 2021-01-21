@@ -23,6 +23,13 @@
     <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
     <!-- You can change the theme colors from here -->
     <link href="<?php echo base_url('assets/css/colors/blue.css') ?>" id="theme" rel="stylesheet">
+
+    <!-- Additional -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <!-- ehe tte nandayo -->
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -37,7 +44,8 @@
     <!-- ============================================================== -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
     </div>
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -55,15 +63,17 @@
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            
+
                             <!-- Light Logo icon -->
                             <img src="<?php echo base_url('assets/images/logo-light-icon.png') ?>" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
-                         
-                         <!-- Light Logo text -->    
-                         <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" /></span> </a>
+
+                            <!-- Light Logo text -->
+                            <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" />
+                        </span>
+                    </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -80,7 +90,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
                         </li>
                     </ul>
                     <!-- ============================================================== -->
@@ -92,8 +103,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic m-r-10" />
-							<?php echo $this->session->userdata('user_name'); ?></a>
+                                <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic m-r-10" />
+                                <?php echo $this->session->userdata('user_name'); ?></a>
                         </li>
                     </ul>
                 </div>
@@ -112,21 +123,15 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'dashboard' ?
-						'active' : ''; ?>" href="<?php echo site_url('dashboard') ?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span 
-						 class="hide-menu">Dashboard</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('dashboard') ?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'user_input' ?
-						'active' : ''; ?>" href="<?php echo site_url('user_input') ?>" aria-expanded="false"><i class="mdi mdi-account-check"></i><span
-						 class="hide-menu">Input Data</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('user_input') ?>" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Input Data</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'user_lihat' ?
-						'active' : ''; ?>" href="<?php echo site_url('user_lihat') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span 
-						 class="hide-menu">Lihat Data</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('user_lihat') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Lihat Data</span></a>
                         </li>
                     </ul>
-                    <div class="text-center m-t-30">
-                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-warning hidden-md-down"> Upgrade to Pro</a>
-                    </div>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -135,7 +140,8 @@
             <div class="sidebar-footer">
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a> </div>
+                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
             <!-- End Bottom points-->
         </aside>
         <!-- ============================================================== -->
@@ -157,11 +163,8 @@
                         <h3 class="text-themecolor">Dashboard</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Input Data</li>
                         </ol>
-                    </div>
-                    <div class="col-md-7 col-4 align-self-center">
-                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down"> Upgrade to Pro</a>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -176,41 +179,46 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-block">
-								<form role="form" action="<?php echo site_url('user_input/tambah') ?>" method="post">
-									<div class="box-body">
-										<div class="form-group">
-											<label for="username">Username</label><br/>
-											<Input type="text" class"form-control" name="username" required>
-										</div>
-										<div class="form-group">
-											<label for="nama">Nama</label><br/>
-											<Input type="text" class"form-control" name="nama" required>
-										</div>
-										<div class="form-group">
-											<label for="pass">Password</label><br/>
-											<Input type="password" class"form-control" name="pass" required>
-										</div>
-										<div class="form-group">
-											<label for="username">Role</label><br/>
-											<select name="role" class="form-contorl" style="width:100%;" required>
-												<option value="null">--Select One--</option>
-												<option value="Admin">Admin<option>
-												<option value="Dosen">Dosen<option>
-											</select>
-										</div>
-										<div class="form-group">
-											<label for="email">Email</label><br/>
-											<Input type="email" class"form-control" name="email" required>
-										</div>
-										<div class="form-group">
-											<label for="telepon">Telepon</label><br/>
-											<Input type="number" class"form-control" name="telepon" required>
-										</div>
-										<button type="submit" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-										&nbsp;&nbsp;
-										<button type="submit" class="btn btn-primary">Save Changes</button>
-									</div>
-								</form>
+                                <h2>Tambah Data Baru</h2>
+                                <form role="form" action="<?php echo site_url('user_input/tambah') ?>" method="post">
+                                    <div class="box-body">
+                                        <div class="form-group">
+                                            <label for="username">Username</label><br />
+                                            <Input id="nama" type="text" class"form-control" name="username" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="nama">Nama</label><br />
+                                            <Input id="username" type="text" class"form-control" name="nama" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass">Password</label><br />
+                                            <Input id="password" type="password" class"form-control" name="pass" required>
+                                            <div id="error_password"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="pass">Ketik Ulang Password</label><br />
+                                            <Input id="rePassword" type="password" class"form-control" name="pass" required>
+                                            <div id="error_password"></div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="username">Role</label><br />
+                                            <select name="role" class="form-control" style="width:20%;" required>
+                                                <option value="null">--Select One--</option>
+                                                <option value="Admin">Admin</option>
+                                                <option value="Dosen">Dosen</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label><br />
+                                            <Input id="email" type="email" class"form-control" name="email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="telepon">Telepon</label><br />
+                                            <Input id="telepon" type="number" class"form-control" name="telepon" required>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">INPUT</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -234,12 +242,28 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
+    <script>
+        $("#rePassword").on('input', function() {
+            var x = $("#password").val();
+            var cek = $("#rePassword").val();
+            var message = "<p class=\"text-danger\">Password tidak sesuai!</p>";
+            if (x != cek) {
+                $("#error_verifikasi").html(message);
+                cek_verifikasi = 0;
+            } else {
+                $("#error_verifikasi").html("");
+                cek_verifikasi = 1;
+            }
+            buttonON();
+        });
+    </script>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <script src="<?php echo base_url('assets/js/bootstrap-validate.js') ?>"></script>
     <script src="<?php echo base_url('assets/plugins/jquery/jquery.min.js') ?>"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="<?php echo base_url('assets/plugins/bootstrap/js/tether.min.js') ?>"></script>

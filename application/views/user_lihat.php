@@ -37,7 +37,8 @@
     <!-- ============================================================== -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
     </div>
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -55,15 +56,17 @@
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            
+
                             <!-- Light Logo icon -->
                             <img src="<?php echo base_url('assets/images/logo-light-icon.png') ?>" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
-                         
-                         <!-- Light Logo text -->    
-                         <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" /></span> </a>
+
+                            <!-- Light Logo text -->
+                            <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" />
+                        </span>
+                    </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -80,7 +83,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
                         </li>
                     </ul>
                     <!-- ============================================================== -->
@@ -92,8 +96,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic m-r-10" />
-							<?php echo $this->session->userdata('user_name'); ?></a>
+                                <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic m-r-10" />
+                                <?php echo $this->session->userdata('user_name'); ?></a>
                         </li>
                     </ul>
                 </div>
@@ -112,21 +116,15 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'dashboard' ?
-						'active' : ''; ?>" href="<?php echo site_url('dashboard') ?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span 
-						 class="hide-menu">Dashboard</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('dashboard') ?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'user_input' ?
-						'active' : ''; ?>" href="<?php echo site_url('user_input') ?>" aria-expanded="false"><i class="mdi mdi-account-check"></i><span
-						 class="hide-menu">Input Data</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('user_input') ?>" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Input Data</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'user_lihat' ?
-						'active' : ''; ?>" href="<?php echo site_url('user_lihat') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span 
-						 class="hide-menu">Lihat Data</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('user_lihat') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Lihat Data</span></a>
                         </li>
                     </ul>
-                    <div class="text-center m-t-30">
-                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-warning hidden-md-down"> Upgrade to Pro</a>
-                    </div>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -135,7 +133,8 @@
             <div class="sidebar-footer">
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a> </div>
+                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
             <!-- End Bottom points-->
         </aside>
         <!-- ============================================================== -->
@@ -157,11 +156,8 @@
                         <h3 class="text-themecolor">Dashboard</h3>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Lihat Data</li>
                         </ol>
-                    </div>
-                    <div class="col-md-7 col-4 align-self-center">
-                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down"> Upgrade to Pro</a>
                     </div>
                 </div>
                 <!-- ============================================================== -->
@@ -176,38 +172,46 @@
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-block">
-								<h4 class="card-title">Data Pengguna</h4>
-								<div class="table-responsive">
-									<table class="table">
-										<thead>
-											<tr>
-												<th>No.</th>
-												<th>Nama</th>
-												<th>E-mail</th>
-												<th>Telepon</th>
-												<th>Aksi</th>
-											</tr>
-										</thead>
-										<tbody>
-											<?php $i = 0; ?>
-											<?php foreach ($user as $u) {?>
-												<tr>
-													<td>
-														<?php $i++; ?>
-														<?php echo $i ?>
-													</td>
-													<td><?php echo $u->nama ?></td>
-													<td><?php echo $u->email ?></td>
-													<td><?php echo $u->telepon ?></td>
-													<td>
-														<a href="#" class="btn btn-success">Edit</a>
-														<a href="#" class="btn btn-danger">Hapus</a>
-													</td>
-												</tr>
-											<?php } ?>
-										</tbody>
-									</table>
-								</div>
+                                <h4 class="card-title">Data Pengguna</h4>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>No.</th>
+                                                <th>Nama</th>
+                                                <th>E-mail</th>
+                                                <th>Telepon</th>
+                                                <th>Aksi</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <?php $i = 0; ?>
+                                            <?php foreach ($user as $u) { ?>
+                                                <tr>
+                                                    <td>
+                                                        <?php $i++; ?>
+                                                        <?php echo $i ?>
+                                                    </td>
+                                                    <td><?php echo $u->nama ?></td>
+                                                    <td><?php echo $u->email ?></td>
+                                                    <td><?php echo $u->telepon ?></td>
+                                                    <td>
+                                                        <a onclick="edit(
+                                                            '<?php echo $u->nama ?>',
+                                                            '<?php echo $u->email ?>',
+                                                            '<?php echo $u->telepon ?>',
+                                                            '<?php echo $u->role ?>',
+                                                            '<?php echo $u->username ?>',
+                                                            '<?php echo $u->password ?>')" class="btn btn-success" style="color:white;border-radius:0"">
+                                                            Edit
+                                                        </a>
+                                                        <a href=" User_input/hapus/<?php echo $u->username ?>" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')" style="border-radius:0">Hapus</a>
+                                                    </td>
+                                                </tr>
+                                            <?php } ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>

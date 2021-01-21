@@ -37,7 +37,8 @@
     <!-- ============================================================== -->
     <div class="preloader">
         <svg class="circular" viewBox="25 25 50 50">
-            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
     </div>
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
@@ -55,15 +56,17 @@
                     <a class="navbar-brand" href="index.html">
                         <!-- Logo icon --><b>
                             <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
-                            
+
                             <!-- Light Logo icon -->
                             <img src="<?php echo base_url('assets/images/logo-light-icon.png') ?>" alt="homepage" class="light-logo" />
                         </b>
                         <!--End Logo icon -->
                         <!-- Logo text --><span>
-                         
-                         <!-- Light Logo text -->    
-                         <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" /></span> </a>
+
+                            <!-- Light Logo text -->
+                            <img src="<?php echo base_url('assets/images/logo-light-text.png') ?>" class="light-logo" alt="homepage" />
+                        </span>
+                    </a>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Logo -->
@@ -80,7 +83,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item hidden-sm-down search-box"> <a class="nav-link hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <form class="app-search">
-                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a> </form>
+                                <input type="text" class="form-control" placeholder="Search & enter"> <a class="srh-btn"><i class="ti-close"></i></a>
+                            </form>
                         </li>
                     </ul>
                     <!-- ============================================================== -->
@@ -92,8 +96,8 @@
                         <!-- ============================================================== -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic m-r-10" />
-							<?php echo $this->session->userdata('user_name'); ?></a>
+                                <img src="<?php echo base_url('assets/images/users/1.jpg') ?>" alt="user" class="profile-pic m-r-10" />
+                                <?php echo $this->session->userdata('user_name'); ?></a>
                         </li>
                     </ul>
                 </div>
@@ -112,21 +116,15 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'dashboard' ?
-						'active' : ''; ?>" href="<?php echo site_url('dashboard') ?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span 
-						 class="hide-menu">Dashboard</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('dashboard') ?>" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Dashboard</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'user_input' ?
-						'active' : ''; ?>" href="<?php echo site_url('user_input') ?>" aria-expanded="false"><i class="mdi mdi-account-check"></i><span
-						 class="hide-menu">Input Data</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('user_input') ?>" aria-expanded="false"><i class="mdi mdi-account-check"></i><span class="hide-menu">Input Data</span></a>
                         </li>
                         <li> <a class="waves-effect waves-dark <?php echo $this->uri->segment(1) == 'user_lihat' ?
-						'active' : ''; ?>" href="<?php echo site_url('user_lihat') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span 
-						 class="hide-menu">Lihat Data</span></a>
+                                                                    'active' : ''; ?>" href="<?php echo site_url('user_lihat') ?>" aria-expanded="false"><i class="mdi mdi-table"></i><span class="hide-menu">Lihat Data</span></a>
                         </li>
                     </ul>
-                    <div class="text-center m-t-30">
-                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-warning hidden-md-down"> Upgrade to Pro</a>
-                    </div>
                 </nav>
                 <!-- End Sidebar navigation -->
             </div>
@@ -135,7 +133,8 @@
             <div class="sidebar-footer">
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Settings"><i class="ti-settings"></i></a>
                 <!-- item--><a href="" class="link" data-toggle="tooltip" title="Email"><i class="mdi mdi-gmail"></i></a>
-                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a> </div>
+                <!-- item--><a href="" class="link" data-toggle="tooltip" title="Logout"><i class="mdi mdi-power"></i></a>
+            </div>
             <!-- End Bottom points-->
         </aside>
         <!-- ============================================================== -->
@@ -160,9 +159,6 @@
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                     </div>
-                    <div class="col-md-7 col-4 align-self-center">
-                        <a href="https://wrappixel.com/templates/materialpro/" class="btn waves-effect waves-light btn-danger pull-right hidden-sm-down"> Upgrade to Pro</a>
-                    </div>
                 </div>
                 <!-- ============================================================== -->
                 <!-- End Bread crumb and right sidebar toggle -->
@@ -181,19 +177,21 @@
                                         <div class="d-flex flex-wrap">
                                             <div>
                                                 <h3 class="card-title">User</h3>
-                                                <h6 class="card-subtitle">Admin vs Dosen</h6> </div>
+                                                <h6 class="card-subtitle">Admin vs Dosen</h6>
+                                            </div>
                                             <div class="ml-auto">
                                                 <ul class="list-inline">
                                                     <li>
-                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Ample</h6> </li>
+                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Ample</h6>
+                                                    </li>
                                                     <li>
-                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Pixel</h6> </li>
+                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Pixel</h6>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12">
-                                        <div class="amp-pxl" style="height: 360px;"></div>
+                                    <div id="myChart">
                                     </div>
                                 </div>
                             </div>
@@ -210,9 +208,11 @@
                             </div>
                             <div class="card-block text-center ">
                                 <ul class="list-inline m-b-0">
-                                        <h6 class="text-muted  text-primary"><i class="fa fa-circle font-10 m-r-10"></i>Admin</h6> </li>
+                                    <h6 class="text-muted  text-primary"><i class="fa fa-circle font-10 m-r-10"></i>Admin</h6>
+                                    </li>
                                     <li>
-                                        <h6 class="text-muted  text-success"><i class="fa fa-circle font-10 m-r-10"></i>Dosen</h6> </li>
+                                        <h6 class="text-muted  text-success"><i class="fa fa-circle font-10 m-r-10"></i>Dosen</h6>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -243,6 +243,42 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
+    <script>
+        var chart = c3.generate({
+            bindto: '#myChart',
+            data: {
+                columns: [
+                    <?php
+                    if (count($user) > 0) {
+                        foreach ($user as $data) {
+                            echo "['" . $data->role . "'," . $data->jumlah . "],";
+                        }
+                    }
+                    ?>
+                ],
+
+                type: 'donut',
+                onclick: function(d, i) {
+                    console.log("onclick", d, i);
+                },
+                onmouseover: function(d, i) {
+                    console.log("onmouseover", d, i);
+                },
+                onmouseout: function(d, i) {
+                    console.log("onmouseout", d, i);
+                },
+            },
+            donut: {
+                label: {
+                    show: false
+                },
+                width: 25,
+            },
+            color: {
+                pattern: ['#007BFF', '#FF6F0D']
+            }
+        });
+    </script>
     <script src="<?php echo base_url('assets/plugins/jquery/jquery.min.js') ?>"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="<?php echo base_url('assets/plugins/bootstrap/js/tether.min.js') ?>"></script>
