@@ -177,22 +177,27 @@
                                         <div class="d-flex flex-wrap">
                                             <div>
                                                 <h3 class="card-title">User</h3>
-                                                <h6 class="card-subtitle">Admin vs Dosen</h6>
+                                                <h6 class="card-subtitle">Diagram data user</h6>
                                             </div>
                                             <div class="ml-auto">
                                                 <ul class="list-inline">
                                                     <li>
-                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Ample</h6>
+                                                        <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Admin</h6>
                                                     </li>
                                                     <li>
-                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Pixel</h6>
+                                                        <h6 class="text-muted  text-info"><i class="fa fa-circle font-10 m-r-10"></i>Dosen</h6>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="myChart">
+                                    <div class="col-12">
+                                        <div id="myChart" class="amp-pxl" style="height: 360px;"></div>
                                     </div>
+
+                                    <!-- <div class="col-12">
+                                        <div class="amp-pxl" style="height: 360px;"></div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
